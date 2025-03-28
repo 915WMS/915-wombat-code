@@ -31,6 +31,7 @@ int main()
     driveb(3200); // drive straight to get the three pom-poms
     set_servo_position(2, 100); //close the small claw to get the three pom-poms
     msleep(500);
+    
     set_servo_position(3, 1000);
     msleep(500);
     driveb(1250); // drive straight to turn to the black trays
@@ -40,13 +41,16 @@ int main()
     msleep(500);
     set_servo_position(2, 756); // Opens the arm to drop the pom-poms
     msleep(500);
+    
     motor(0, 50); // Goes backwards to prevent the claw from flicking the pom-poms
     motor(3, 50);
     msleep(500);
+    
     motor(0, 0);
     motor(3, 100);
     msleep(960); // Turns left to grab another three pom-poms
-	motor(0, 0);
+	
+ motor(0, 0);
     motor(3, 0);
     set_servo_position(3, 1525);
     motor(0, -100);
@@ -58,6 +62,8 @@ int main()
     msleep(500);
     set_servo_position(3, 900);
     msleep(500);
+
+    
     motor(0, 50);
     motor(3, -50);
     msleep(1430);
@@ -68,6 +74,7 @@ int main()
     motor(3, 0);
     set_servo_position(2, 540);
     msleep(500);
+    
     motor(0, -50);
     motor(3, 50);
     msleep(2600); // Turns left to drop the hot dog onto the plate
@@ -80,6 +87,7 @@ int main()
     msleep(1000);
     set_servo_position(3, 430);
     msleep(1000);
+    
     motor(0, 50);
     motor(3, -50); // Turns right to go to the 3 entree tray
     msleep(1190);
@@ -96,6 +104,7 @@ int main()
     motor(3, 0);
     set_servo_position(0, 200); // Closes the claw to grab the hamburger
     msleep(500);
+    
     motor(0, -100);
     motor(3, -100);
     msleep(220); // Backs up to prevent the claw from hitting the PVC pipes.
@@ -110,6 +119,7 @@ int main()
     set_servo_position(3, 1542);
     set_servo_position(2, 900);
     msleep(500);
+    
     motor(0, -50);
     motor(3, -50);
     msleep(6400);
@@ -123,6 +133,7 @@ int main()
     motor(0, -50);
     motor(3, -50);
     msleep(4500); // Drives forward to grab the red pom-pom
+    
     motor(0, 0);
     motor(3, 0);
     set_servo_position(2, 0);
@@ -139,6 +150,7 @@ int main()
     motor(3, 0);
     set_servo_position(2, 1000);
     msleep(500);
+    
     motor(0, -50);
     motor(3, 50);
     msleep(2460);
@@ -158,6 +170,7 @@ int main()
     motor(0, -50);
     motor(3, 50);
     msleep(880); // Turns left to grab the potato
+    
     motor(0, 0);
     motor(3, 0);
     set_servo_position(0, 1000);
@@ -167,6 +180,7 @@ int main()
     motor(0, 50);
     motor(3, 50);
     msleep(1000);
+    
     motor(0, 0);
     motor(3, 0);
     set_servo_position(0, 0);
@@ -179,12 +193,14 @@ int main()
     motor(0, 100);
     motor(3, 100);
     msleep(960);
+    
     motor(0, 50);
     motor(3, -50);
     msleep(1050); // Turns right to drop the potato
     motor(0, 100);
     motor(3, 100);
     msleep(1690); // Drives forward to drop the potato
+    
     motor(0, 0);
     motor(3, 0);
     set_servo_position(0, 1000);
@@ -192,6 +208,7 @@ int main()
     motor(0, 100);
     motor(3, 100);
     msleep(2030);
+	
     motor(0, 0);
     msleep(1500);
     motor(3, 0);
@@ -199,7 +216,8 @@ int main()
     msleep(800);
     set_servo_position(2, 469); //move down the small arm to get the red pom-pom
     msleep(500);   
-    driveb(4200); // drive straight to get the three pom-poms
+   
+	driveb(4200); // drive straight to get the three pom-poms
     set_servo_position(2, 50); //close the small claw to get the three pom-poms
     msleep(500);
     set_servo_position(3, 1000);
@@ -234,6 +252,7 @@ int main()
     msleep(600);
     set_servo_position(3, 940);
     msleep(600);
+	
     motor(0, 100);
     motor(3, 100);
     msleep(1100);
